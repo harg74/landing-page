@@ -321,6 +321,18 @@ nav ul{
     display: block;
 }
 
+@supports (-webkit-touch-callout: none) {
+    #nav-wrapper {
+        gap: 10px;
+        -webkit-align-items: center;
+    }
+
+    #img-logo, .btn-wrapper {
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+    }
+}
+
 @media only screen and (min-width: 960px) {
 
     #nav-wrapper {
