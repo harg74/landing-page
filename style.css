@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(244, 249, 247);
+}
+
+
+nav{
+    margin: 20px 20px 100px 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 249, 247);
+    color: #062637;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 50px;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: end;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 1rem;
+    gap: 20px;
+}
+
+.btn-nav{
+    padding: .7rem 1.6rem;
+    border: 0px;
+    border-radius: 10px;
+    font-size: small;
+    font-weight: 100;
+}
+
+#btn-signup{
+    background-color: rgb(35, 124, 141);
+    color: rgb(255, 255, 255)
+}
+
+#btn-signup:hover{
+    background-color: #062637;
+}
+
+#btn-login{
+    background-color:rgb(244, 249, 247);
+    border: 1px solid rgb(195, 203, 205);
+    color: #062637
+}
+
+#btn-login:hover{
+    border-color: #227c8d;
+}
+
+#hero-section{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-left: 80px;
+    gap: 5rem;
+}
+
+#hero-section-info p:first-child{
+    color:#062637;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 5rem;
+}
+
+#hero-section-info p:nth-child(2){
+    color:rgb(13, 40, 55);
+    font-size: large;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+#hero-section-info input{
+    padding: 20px;
+    width: 300px;
+    font-size: small;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 224, 225);
+}
+
+#hero-section-invoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#invoice-wrapper{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px -13px ;
+    border-radius: 15px;
+    background-color:white;
+    position: relative;
+}
+
+#credit-card{
+    margin-left: 210px;
+}
+
+#bank-account{
+    margin-left: 196px;
+}
+
+label{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: small;
+    margin-bottom: .3rem;
+}
+
+label:hover, label:active, input:hover+label, input:active+label {
+    border: 1px solid rgb(67, 130, 145);
+}
+
+
+#invoice-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#invoice-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#invoice p{
+    margin-left: 20px;
+    font-size: smaller;
+    line-height: 1.2rem;
+}
+
+#invoice p:nth-child(2){
+    color:rgb(86, 88, 95);
+}
+
+#btn-pay{
+    margin-top: .6rem;
+    padding: .7rem 1.6rem;
+    border: 0px;
+    border-radius: 10px;
+    font-size: small;
+    font-weight: 100;
+    background-color:#062637;
+    color: white;
+}
+
+#btn-pay:hover{
+    background-color: #227c8d;
+}
+
+#invoice-description{
+    margin-top: 10px;
+    margin-bottom: .3rem;
+    line-height: 1.2rem;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+#invoice-description p:nth-child(1){
+    color:rgb(91, 91, 104);
+    font-size: small;
+    margin-bottom: .3rem;
+}
+
+#invoice-description p:nth-child(2){
+    color:#062637;
+    font-size: x-large;
+    margin-bottom: .3rem;
+}
+
+#invoice-description p:nth-child(3){
+    color:rgb(91, 91, 104);
+    font-size: small;
+    margin-bottom: .3rem;
+}
+
+#credit-card-num{
+    background-color: #227c8d;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    position: absolute;
+    bottom:190px;
+    left: 210px;
+    width: 190px;
+    background: linear-gradient(to bottom, #227c8d 75%, #062637 0%, #062637 100%);
+}
+
+#credit-card-num p{
+    margin: 10px 5px 0 25px;
+    padding-right: 40px;
+}
+
+#credit-card-num p:nth-child(1){
+    margin-top: 25px;    
+    font-size: small;
+}
+
+#credit-card-num p:nth-child(2){
+    font-size: large;
+    padding-bottom: 160px;
+}
+
+@media (min-width: 850px) {
+    #hero-section {
+        grid-template-columns: 1fr 1fr;
+        }
+    }
+
