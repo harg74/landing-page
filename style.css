@@ -274,6 +274,13 @@ nav ul{
     padding-bottom: 160px;
 }
 
+.radio-container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-around; /* Horizontal spacing */
+    white-space: nowrap;
+}
+
 #toogle{
     display: none;
 }
@@ -380,7 +387,7 @@ nav ul{
 
     #credit-card-num{
         width: 160px;
-        bottom:210px;
+        bottom:180px;
         left: 200px;
     }
 }
