@@ -375,3 +375,111 @@ nav ul{
         order:2;
     }
 }
+
+@media only screen and (min-width: 960px) {
+
+    #nav-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 20px 100px 20px;
+        gap: 20px;
+    }
+
+    #hero-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav label{
+        display: none;
+    }
+
+    nav ul li{
+        display:inline;
+        margin: 0 0 0 30px;
+    }
+
+    #nav-wrapper{
+        display: flex;
+        align-items: center;
+        margin: 20px 20px 100px 20px;
+    }
+
+    #nav-wrapper ul{
+        text-align: center;
+        padding: 15px 20px;
+        display: inline;
+    }
+
+    nav ul li {
+        display: inline;
+        border: none;
+        margin: 0 15px;
+        padding: 0;
+    }
+
+    #nav-wrapper .btn-wrapper{
+        order:3;
+    }
+    
+    #nav-wrapper #img-logo{
+        order:1;
+    }
+    
+    #nav-wrapper ul{
+        order:2;
+    }
+}
+
+/* Mobile styles (for very small screens < 438px) */
+@media screen and (max-width: 438px) {
+    #nav-wrapper {
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    #img-logo {
+        width: 100%; /* Full width */
+        justify-content: center; /* Center the logo */
+        margin-bottom: 10px;
+    }
+
+    .btn-wrapper {
+        width: 100%; /* Full width */
+        justify-content: center; /* Center the buttons */
+        margin: 0; /* Remove auto margin */
+    }
+
+    /* Optional: Adjust button sizes for very small screens */
+    .btn-nav {
+        padding: .5rem 1.2rem; /* Slightly smaller padding */
+    }
+
+    #hero-section{
+        margin-left: 40px;
+    }
+}
+
+/* Your existing medium screen styles */
+@media only screen and (min-width: 438px) and (max-width: 959px) {
+    #nav-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #img-logo {
+        order: 1;
+    }
+
+    .btn-wrapper {
+        order: 2;
+        /* margin-left: auto; */
+    }
+
+    #nav-wrapper ul {
+        order: 3;
+    }
+}
