@@ -253,7 +253,7 @@ nav ul{
     color: rgb(255, 255, 255);
     border-radius: 15px;
     position: absolute;
-    bottom:190px;
+    bottom:180px;
     left: 210px;
     width: 190px;
     background: linear-gradient(to bottom, #227c8d 75%, #062637 0%, #062637 100%);
@@ -364,7 +364,18 @@ nav ul{
     }
 
     #hero-section{
-        margin-left: 40px;
+        margin-left: 20px;
+        gap: 3rem;
+    }
+
+    #hero-section-info p:first-child{
+        font-size: 3.2rem;
+    }
+
+    #credit-card-num{
+        width: 170px;
+        bottom:210px;
+        left: 200px;
     }
 }
 
@@ -387,5 +398,10 @@ nav ul{
 
     #nav-wrapper ul {
         order: 3;
+    }
+
+    #hero-section{
+        margin-left: 20px;
+        gap: 3rem;
     }
 }
