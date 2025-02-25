@@ -380,6 +380,10 @@ nav ul{
         line-height: 4rem;
     }
 
+    #hero-section-info p:nth-child(2){
+        font-size: medium;
+    }
+
     #credit-card-num p:nth-child(2){
         font-size:medium;
         padding-right: 0;
