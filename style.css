@@ -11,10 +11,10 @@ nav{
     margin: 10px 0 0 20px;
 }
 
-/* #nav-wrapper{
+#nav-wrapper{
     display: flex;
     justify-content: space-between;
-} */
+}
 
 #nav-wrapper ul{
     text-align: center;
@@ -26,7 +26,6 @@ nav{
 nav ul li{
     display:block;
     border: 1px solid #c3cbcd;
-    /* margin: 0 0 0 30px; */
     padding: 20px;
 }
 
@@ -46,7 +45,7 @@ nav label{
     display: flex;
     justify-content: center;
     width: fit-content;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: 1rem;
     gap: 20px;
 }
@@ -319,18 +318,6 @@ nav ul{
 
 #toogle:checked + #nav-wrapper ul {
     display: block;
-}
-
-@supports (-webkit-touch-callout: none) {
-    #nav-wrapper {
-        gap: 10px;
-        -webkit-align-items: center;
-    }
-
-    #img-logo, .btn-wrapper {
-        -webkit-align-items: center;
-        -webkit-justify-content: center;
-    }
 }
 
 @media only screen and (min-width: 960px) {
