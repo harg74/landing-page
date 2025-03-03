@@ -430,6 +430,10 @@ button{
         font-size: small;
     }
 
+    nav ul li a{
+        font-size: medium;
+    }
+
 }
 
 
@@ -531,6 +535,10 @@ button{
 
     #nav-top label{
         margin-left: 10px;
+    }
+
+    nav ul li a{
+        font-size: large;
     }
 
 }
