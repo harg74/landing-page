@@ -9,35 +9,40 @@
 </head>
 <body>
     <nav>
-        <label for="toogle">&#9776;</label>
-        <input type="checkbox" id="toogle">
-        <div id="nav-wrapper">
-            <div id="img-logo">
-                <img src="img/logo.png" alt="finpay company logo" width="200px"/>
+        <input type="checkbox" id="toggle">
+        <div id="nav-top">
+            <label for="toggle">&#9776;</label>
+            <div id="nav-wrapper">
+                <div id="img-logo">
+                    <img src="img/logo.png" alt="finpay company logo"/>
+                </div>
+
             </div>
-            <ul>
-                <li><a id="nav-link" href="#">Products</a></li>
-                <li><a id="nav-link" href="#">Customers</a></li>
-                <li><a id="nav-link" href="#">Pricing</a></li>
-                <li><a id="nav-link" href="#">Learn</a></li>
-            </ul>
-            <div class="btn-wrapper">
-                <button class="btn-nav" id="btn-login">Login</button>
-                <button class="btn-nav" id="btn-signup">Sign up</button>
-            </div>
+        </div>
+        <ul>
+            <li><a id="nav-link" href="#">Products</a></li>
+            <li><a id="nav-link" href="#">Customers</a></li>
+            <li><a id="nav-link" href="#">Pricing</a></li>
+            <li><a id="nav-link" href="#">Learn</a></li>
+        </ul>
+        <div class="btn-wrapper">
+            <button class="btn-nav" id="btn-login">Login</button>
+            <button class="btn-nav" id="btn-signup">Sign up</button>
         </div>
     </nav>
     <section id="hero-section">
         <div id="hero-section-info">
-            <p><strong>Get paid early</strong><br/>save automatically<br/> all your pay.</p>
-            <p>Supports small business with simple invoicing,<br/> powerful integrations and casflow management tools.</p>
-            <input type="text" placeholder="Your business email">
+            <div id="hero-section-info-container">
+                <p><strong>Get paid early</strong><br/>save automatically<br/> all your pay.</p>
+                <p>Supports small business with simple invoicing,<br/> powerful integrations and casflow management tools.</p>
+                <input type="text" placeholder="Your business email">
+            </div>
         </div>
         <div id="hero-section-invoice">
             <div id="invoice-wrapper">
                 <div id="invoice-content">
                     <div id="invoice-header">
-                        <div>
+                        <div class="img-container">
                             <img src="img/dipa-logo.png" alt="dipa logo" width=40px>
                         </div>
                         <div id="invoice">
