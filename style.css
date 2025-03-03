@@ -78,7 +78,7 @@ li:last-child {
 /*Style nav bar and buttons*/
 
 #img-logo img{
-    max-width: 80%;
+    max-width: 200px;
 }
 
 .btn-wrapper{
@@ -370,6 +370,10 @@ button{
         margin-bottom: 50px;
     }
 
+    #img-logo img{
+        max-width: 250px;
+    }
+
     nav ul{
         top: 60px;
     }
@@ -493,9 +497,27 @@ button{
 
 }
 
+/* Min 900 px*/
 @media screen and (min-width:56.25rem){
     nav{
         margin-bottom: 50px;
+    }
+    nav label{
+        display: none;
+    }
+
+    nav ul{
+        /*display menu on top*/
+        display: flex;
+        background-color: transparent;
+        backdrop-filter: none;
+        position: static;
+        width: auto;
+    }
+
+    #img-logo img{
+        max-width: 300px;
+        margin-left: 40px;
     }
 
     #hero-section-info p:nth-child(1){
