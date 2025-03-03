@@ -139,8 +139,7 @@ li:last-child {
 }
 
 #hero-section-info input{
-    font-size: xx-small;
-    margin-bottom: 10px;
+    /* font-size: xx-small; */
     min-width: clamp(100px, 55%, 330px);
     flex-grow:2;
     max-height: 100%;
@@ -208,6 +207,7 @@ li:last-child {
     margin-bottom: .3rem;
 }
 
+
 #invoice-content label:hover, #invoice-content label:active, input:hover+#invoice-content label, input:active+#invoice-content label {
     border: 1px solid rgb(67, 130, 145);
 }
@@ -244,6 +244,42 @@ button{
     cursor: pointer;
 }
 
+.input-wrapper {
+    position: relative;
+    display: flex;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 4px; /* Optional: adds rounded corners */
+    overflow: hidden; /* Ensures the button doesn't break the border */
+    max-width: 400px; /* Or whatever max width you want */
+    margin: 0 auto; /* Centers the element if needed */
+}
+
+.input-container input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    width: 100%; /* Takes up available space */
+}
+
+.input-container button {
+    border: none;
+    background-color: #227c8d; /* You can use your preferred color */
+    color: white;
+    padding: 10px 15px;
+    position: relative; /* Change from absolute to relative */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Add a hover effect on the button */
+.input-container button:hover {
+    background-color: #062637;
+}
+
+/* Add a hover effect on the entire wrapper */
+.input-wrapper:hover {
+    border-color: #227c8d;
+}
+
 /*180px or more*/
 @media screen and (min-width: 11.25rem){
     ul li{
@@ -272,9 +308,12 @@ button{
     }
     
     #hero-section-info input{
-        font-size: small;
-        margin-bottom: 10px;
+        /* font-size: small; */
         padding: 5px;
+    }
+
+    .input-wrapper{
+        margin-bottom: 2.5rem;
     }
 
     #invoice-content{
@@ -333,9 +372,10 @@ button{
     }
 
     #hero-section-info input{
-        margin-bottom: 20px;
         padding: 10px;
     }
+
+ 
 
     #invoice-description p:nth-child(2){
         color:#062637;
@@ -401,7 +441,6 @@ button{
     }
 
     #hero-section-info input{
-        margin-bottom: 25px;
         padding: 10px;
     }
 
@@ -452,13 +491,14 @@ button{
         margin-bottom: 2rem;
     }
 
+    .input-wrapper{
+        margin-bottom: 5rem;
+    }
+
     #credit-card-num{
         display: block;
     }
 
-    #hero-section-info input{
-        margin-bottom: 5rem;
-    }
 
     #credit-card-num{
         background-color: #227c8d;
@@ -516,7 +556,7 @@ button{
     }
 
     #img-logo img{
-        max-width: 300px;
+        max-width: 250px;
         margin-left: 40px;
     }
 
@@ -550,6 +590,15 @@ button{
         text-align: start;
     } */
 
+    .input-wrapper{
+        margin: 0
+    }
+
+    #invoice-wrapper{
+        justify-content: start;
+        align-items: center;
+    }
+
     #invoice-wrapper{
         justify-content: start;
         align-items: center;
@@ -559,8 +608,13 @@ button{
         margin-left: 10px;
     }
 
+    ul li{
+        padding: 30px 20px;
+    }
+
     nav ul li a{
         font-size: large;
+
     }
 
 }
