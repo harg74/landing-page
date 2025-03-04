@@ -32,6 +32,7 @@ nav ul{
     position: absolute;
     width: 100%;
     z-index: 1000;
+    
 }
 
 ul li{
@@ -67,6 +68,7 @@ li:last-child {
 #toggle:checked ~ ul{
     display: block;
     height: 100vh;
+    overflow: hidden;
 }
 
 #nav-top{
@@ -351,7 +353,7 @@ button{
         margin-right: 10px;
     }
 
-    #bank-account{
+    #bank-account a{
         margin-right: 10px;
     }
 
